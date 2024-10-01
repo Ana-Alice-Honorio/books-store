@@ -1,9 +1,9 @@
 import "./App.css";
 import React, { useState } from "react";
-import BooksList from "./components/BookList";
-import Book from "./components/Book";
-import Loading from "./components/Loading";
-import Header from "./components/Header";
+import BooksList from "./components/BookList/BookList";
+import Book from "./components/Book/Book";
+import Loading from "./components/Loading/Loading";
+import Header from "./components/Header/Header";
 //importação do necessário
 
 function App() {

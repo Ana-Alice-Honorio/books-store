@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import axios from "axios";
+import "./Book.css";
 
 //constante com books e loadings setados diretamente
 const Book = ({ setBooks, setLoading }) => {

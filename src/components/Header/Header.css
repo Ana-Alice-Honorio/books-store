@@ -1,0 +1,48 @@
+.App-header {
+  font-size: 20px;
+  background: #d5d2c8;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 25px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}

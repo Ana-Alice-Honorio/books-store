@@ -1,8 +1,9 @@
 import React from "react";
-import logo from "../public/books.png";
+import logo from "../../images/books.png";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import "./Header.css";
 
 const Header = () => {
   return (

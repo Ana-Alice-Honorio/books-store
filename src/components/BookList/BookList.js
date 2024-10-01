@@ -1,5 +1,6 @@
 import React from "react";
-import BookItem from "../components/BookDetails";
+import "./BookList.css";
+import BookItem from "../BookDetails/BookDetails";
 // trago a listagem de livros da api
 const BooksList = ({ books }) => {
   return (
