@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import BooksList from "./components/BookList";
 import Book from "./components/Book";
 import Loading from "./components/Loading";
+import Header from "./components/Header";
 //importação do necessário
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
   //retornando um header, o loading setado ou compon. Loading caso contrário trago os livros usando ternário
   return (
     <div>
-      <header>
-        <h1>Livros NY times</h1>
-      </header>
+      <Header />
       {loading ? <Loading /> : <BooksList books={books} />}
       <Book setBooks={setBooks} setLoading={setLoading} />
     </div>
