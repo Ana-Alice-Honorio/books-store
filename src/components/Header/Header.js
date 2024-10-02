@@ -46,6 +46,7 @@ const Header = ({ onSearch }) => {
         />
         <SearchIcon className="search-icon" />
       </div>
+    
 
       {/* ícones de contato */}
 
