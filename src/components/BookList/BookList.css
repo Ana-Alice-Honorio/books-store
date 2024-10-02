@@ -1,52 +1,15 @@
+.pagination-conteiner {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+}
+
 .books-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   padding-top: 110px;
-}
-
-.book-card {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-
-.book-card:hover {
-  transform: scale(1.05);
-}
-
-.book-image img {
-  width: 100%;
-  height: auto;
-}
-
-.book-details {
-  padding: 15px;
-}
-
-.book-title {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.book-author {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 15px;
-}
-
-.book-description {
-  font-size: 14px;
-  color: #777;
-  line-height: 1.5;
-  height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @media (max-width: 1024px) {
