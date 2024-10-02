@@ -1,48 +1,116 @@
-.App-header {
-  font-size: 20px;
-  background: #d5d2c8;
-  color: black;
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5d2c8;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo-container {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 20px;
-  height: 80px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 100px;
+  height: 82px;
   width: auto;
 }
 
-.logo span {
-  font-size: 25px;
+.store-name {
+  font-size: 20px;
+  color: #333;
+  font-family: "Edu AU VIC WA NT Guides", cursive;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
-  font-size: 10px;
 }
 
+.social-media {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Estilo do menu hambúrguer */
+.mobile-menu {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  display: flex;
+}
+
+.mobile-menu span {
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.search-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.search-icon {
+  color: #333;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  .App-header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
+  .store-name {
+    display: none;
   }
 
-  .logo img {
-    height: 40px;
+  .social-media {
+    display: none;
   }
 
-  .contact-info {
-    margin-top: 10px;
-    font-size: 16px;
+  .search-container {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1900px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
   }
 }
