@@ -4,6 +4,8 @@ import Book from "./components/Book/Book";
 import Header from "./components/Header/Header";
 import BookList from "./components/BookList/BookList";
 import NotFound from "./components/NotFound/NotFound";
+import Loading from "./components/Loading/Loading";
+import Footer from "./components/Footer/Footer";
 //importação do necessário
 
 function App() {
@@ -29,12 +31,13 @@ function App() {
       <Header onSearch={handleSearchChange} />
       <Book setBooks={setBooks} setLoading={setLoading} />
       {loading ? (
-        <p>Carregando...</p>
+        <Loading />
       ) : filteredBooks.length > 0 ? (
         <BookList books={filteredBooks} />
       ) : (
         <NotFound />
       )}
+      <Footer />
     </div>
   );
 }
