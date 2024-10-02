@@ -4,11 +4,15 @@ import "./BookDetails.css";
 //Aqui trago os detalhes dos livros de acordo com retorno da api
 const BookItem = ({ book }) => {
   return (
-    <div>
-      <h2>{book.title}</h2>
-      <p>{book.author}</p>
-      <img src={book.book_image} alt={book.title} />
-      <p>{book.description}</p>
+    <div className="book-card">
+      <div className="book-image">
+        <img src={book.book_image} alt={book.title} />
+      </div>
+      <div className="book-details">
+        <h3 className="book-title">{book.title}</h3>
+        <p className="book-author">by {book.author}</p>
+        <p className="book-description">{book.description}</p>
+      </div>
     </div>
   );
 };
