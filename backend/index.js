@@ -1,19 +1,25 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
 app.use(express.json());
 
-let userBooks = [];
+let books = [];
 
-app.post("/api/favorites", (req, res) => {
-  const { book } = req.body;
-  userBooks.push(book);
-  res.status(201).send(book);
+app.post("/books", (req, res) => {
+  const newBook = {
+    id: books.length + 1,
+    title: req.body.title,
+    author: req.body.author,
+    book_image: req.body.imageUrl,
+    description: req.body.description,
+  };
+  books.push(newBook);
+  res.status(201).json(newBook);
 });
 
-app.get("/api/favorites", (req, res) => {
-  res.status(200).send(userBooks);
-});
-
-app.listen(3001, () => {
-  console.log("Backend rodando na porta 3001");
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
