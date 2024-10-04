@@ -12,7 +12,7 @@ $ git clone git@github.com:Ana-Alice-Honorio/books-store.git
 ```
 
 ```sh
-cd book-store
+cd books-store
 ```
 
 ```sh
