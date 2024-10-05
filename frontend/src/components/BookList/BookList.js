@@ -1,8 +1,10 @@
+// BookList.js
 import React, { useState } from "react";
 import "./BookList.css";
 import BookItem from "../BookDetails/BookDetails";
 import Pagination from "../Pagination/Pagination";
 
+// uso da prop books
 const BooksList = ({ books }) => {
   const [currentPage, setCurrentpage] = useState(1);
   const booksPerPage = 6;
@@ -15,15 +17,13 @@ const BooksList = ({ books }) => {
   // Função para mudar de página
   const paginate = (pageNumber) => setCurrentpage(pageNumber);
 
-
-
   return (
     <div className="books-grid">
       {currentBooks.map((book) => (
-        <BookItem
-          key={book.title}
-          book={book}
-        />
+        <BookItem key={book.title} book={book}>
+          {/* Botão sem funcionalidade por enquanto, somente design. Esse é meu children (o qual mencionei no BookItem) */}
+          <button className="read-more-button">Leia Mais</button>
+        </BookItem>
       ))}
       <div className="pagination-conteiner">
         <Pagination
