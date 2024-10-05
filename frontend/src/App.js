@@ -30,18 +30,19 @@ function App() {
       {/* Header com search. Se não voltar o filtro por nome do livro, ele traz a página de notFound */}
 
       <Header onSearch={handleSearchChange} />
-      {/* formulário de adicionar novo livro*/}
-      <AddBook setBooks={setBooks} />
-      {/* chamada dos dados do endpoint NY times book*/}
-      <Book setBooks={setBooks} setLoading={setLoading} />
-      {loading ? (
-        <Loading />
-      ) : filteredBooks.length > 0 ? (
-        <BookList books={filteredBooks} />
-      ) : (
-        <NotFound />
-      )}
-
+      <main>
+        {/* formulário de adicionar novo livro*/}
+        <AddBook setBooks={setBooks} />
+        {/* chamada dos dados do endpoint NY times book*/}
+        <Book setBooks={setBooks} setLoading={setLoading} />
+        {loading ? (
+          <Loading />
+        ) : filteredBooks.length > 0 ? (
+          <BookList books={filteredBooks} />
+        ) : (
+          <NotFound />
+        )}
+      </main>
       <Footer />
     </div>
   );

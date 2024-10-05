@@ -34,7 +34,7 @@ const AddBook = ({ setBooks }) => {
   /* dados do formulário com seus respectivos estados*/
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="book-form">
       <input
         type="text"
         placeholder="Título"

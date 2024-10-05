@@ -1,1 +1,52 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #c99e93;
+  background-color: white;
+  border-radius: 8px;
+}
 
+.book-form input,
+.book-form textarea {
+  padding: 8px;
+  border: 1px solid #c99e93;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  flex: 1;
+  min-width: 150px;
+}
+
+textarea {
+  resize: none;
+  height: 40px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #c99e93;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e5b8ad;
+  color: white;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #c99e93;
+  box-shadow: 0 0 5px rgba(201, 158, 147, 0.5);
+  background-color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
