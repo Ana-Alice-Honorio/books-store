@@ -6,6 +6,7 @@ import BookList from "./components/BookList/BookList";
 import NotFound from "./components/NotFound/NotFound";
 import Loading from "./components/Loading/Loading";
 import Footer from "./components/Footer/Footer";
+import AddBook from "./components/BookForm/BookForm";
 //importação do necessário
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
       {/* Header com search. Se não voltar o filtro por nome do livro, ele traz a página de notFound */}
 
       <Header onSearch={handleSearchChange} />
+      {/* formulário de adicionar novo livro*/}
+      <AddBook setBooks={setBooks} />
+      {/* chamada dos dados do endpoint NY times book*/}
       <Book setBooks={setBooks} setLoading={setLoading} />
       {loading ? (
         <Loading />
@@ -37,6 +41,7 @@ function App() {
       ) : (
         <NotFound />
       )}
+
       <Footer />
     </div>
   );
