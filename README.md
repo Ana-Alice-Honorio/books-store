@@ -1,5 +1,12 @@
 # Book Store
 
+![GitHub repo size](https://img.shields.io/github/repo-size/Ana-Alice-Honorio/books-store?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Ana-Alice-Honorio/books-store?style=for-the-badge)
+![last commit](https://img.shields.io/github/last-commit/Ana-Alice-Honorio/books-store?style=for-the-badge")
+![Feito por Alice](https://img.shields.io/badge/feito-por%20Alice-D818A5")
+
+![Book store page](<./frontend/src/images/Book%20Store%20(1).gif>)
+
 ## ⚙️ Funcionalidades
 
 - [x] Página inicial:
